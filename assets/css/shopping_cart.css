@@ -1,0 +1,26 @@
+.shop_cart th,td{
+    border: 1px solid black;
+}
+.shop_cart{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10%;
+    width: 60%;
+}
+
+body{
+    background-color: #EAE0D5;
+    box-sizing: content-box;
+}
+
+/* .Cart-section {
+    margin: 10%;
+    padding: 50%;
+    background-color: aqua;
+} */
+.NEXT{
+    position: relative;
+    margin-top: 5px;
+}

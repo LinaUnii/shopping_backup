@@ -1,0 +1,134 @@
+.Row{
+    width: 100%;
+    padding: 0 22% 0;
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: content-box;
+}
+.Row-left{
+    margin: 0% auto;
+    padding: 0% 4%;
+    float: left;
+} 
+.Row-right{
+    margin: 0% auto;
+    padding: 0% 4%;
+    text-align: left;
+    float: right;
+    line-height: 2;
+}
+.Row-right h2 {
+ margin-top: 20px;
+ font-weight: bold;
+ line-height: 2;
+}
+.Row-right h3 {
+  font-size: 25px;
+  margin: 10px 0 10px 5px;
+  font-weight: bold;
+  line-height: 1;
+ }
+.comment-row{
+  background-color: black;
+}
+.member_register-userphoto{
+  padding: 2px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.comment-right{
+  text-align: left;
+  padding: 5%;
+}
+
+.board-example{
+  width:250px;
+  margin:0px auto;
+  padding:0px;
+}
+
+.comment-username{
+  text-align: center;
+}
+
+.comment-userphoto{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-center{
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.comment-timestamp{
+  font-size: 18px;
+  color:gray;
+  text-align: center;
+}
+
+hr {
+  text-align: center;
+}
+
+.comment-submit{
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  padding-bottom: 10%;
+  /* background-color: #444; */
+}
+
+#comment-right-button{
+  margin-bottom: 20%;
+}
+
+/* 會動的星星 */
+
+.board {
+    width:250px;
+    margin:0px auto;
+  }
+  
+  .star_value {
+    text-align:center;
+  }
+  
+  /* hiding the radio buttons */
+  input[type="radio"] {
+    display:none;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color:orange;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  label:hover, label:hover ~ label {color:orange;}
+  
+  .rating {
+    direction:rtl;
+    unicode-bidi: bidi-override;
+  }
+
+  .star{
+    text-align: center;
+  }
+  
+body{
+    background-color: #EAE0D5;
+    display: inline-block;
+}
+  /* 不會動的星星 */
+  .checked {
+    color: orange;
+  }
