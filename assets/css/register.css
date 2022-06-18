@@ -1,22 +1,21 @@
 section{
     margin: 0;
-    padding-top: 6%;
+    padding-top: 3%;
 }
 
 .register_flex{
     display: flex;
-    /* padding: 150px; */
-
 }
 
 .member_register{
-    margin: 4% auto;
+    margin: 0% auto 3%;
     padding: 5%;
-    width: 30%;
+    width: 40%;
     border-radius: 25px;
     opacity: 1;
     background-color: rgba(255, 250, 250, 0.8);
-    font-size: 1em;
+    font-size: 18px;
+    letter-spacing: 0.2em;
     border-spacing: 10px;
     box-shadow: 10px 8px 6px #444;
     position: relative;
@@ -24,8 +23,15 @@ section{
     justify-content: center;
     align-items: center;
 }
-.member_register-th{
+.register_img {
     text-align: center;
+    margin-bottom: 5%;
+}
+.member_register-th{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    padding: .3em;
 }
 .member_register-userphoto {
     border: 0.1em solid #444;
@@ -42,8 +48,60 @@ section{
 }
 .member_register-td{
     padding: 1.2em;
+    padding-right: 0%;
     text-align: left;
 }
-.button{
-    margin: 5px;
+input {
+    padding: .3em;
 }
+.buttonLOOK{
+    border:0;
+    background-color:#22333B;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+    width:100px;
+    height:50px;
+    margin: 2em 1em 0;
+
+  }
+  
+  input.buttonLOOK:hover {
+    color:#D79B00;
+    background-color:#fff;
+    border:2px #D79B00;
+  }
+
+
+
+@media(max-width:480px) {
+    .member_register {
+        width: 70%;
+        margin: 2% auto;
+    }
+}
+@media(max-width:850px) {
+    .member_register {
+        width: 70%;
+        margin: 2% auto;
+    }
+}
+@media(max-width:1200px) {
+    .member_register {
+        width: 80%;
+        margin: 2% auto;
+    }
+}
+
+
+.member_register-userphoto {
+		overflow: hidden;
+		border: 5px solid #fafafa;
+		background-color: #fafafa;
+		box-shadow: 0 0 .5rem #babbbc;
+		transform: rotate(-360deg);
+}
+.member_register-userphoto img{
+    width: 100%;
+}
+

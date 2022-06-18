@@ -1,134 +1,176 @@
-.Row{
-    width: 100%;
-    padding: 0 22% 0;
-    padding-top: 150px;
-    display: flex;
-    justify-content: space-around;
-    box-sizing: content-box;
+body{
+  max-width: 100%;
 }
-.Row-left{
-    margin: 0% auto;
-    padding: 0% 4%;
-    float: left;
-} 
-.Row-right{
-    margin: 0% auto;
-    padding: 0% 4%;
-    text-align: left;
-    float: right;
-    line-height: 2;
+.TOPbody{ 
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
-.Row-right h2 {
- margin-top: 20px;
- font-weight: bold;
- line-height: 2;
+
+body {
+  margin: 0%;
+  background-color: #EAE0D5;
 }
-.Row-right h3 {
-  font-size: 25px;
-  margin: 10px 0 10px 5px;
+section{
+  border: #c9c2bbde solid;
+  width: 70%;
+  height: 50%;
+  max-width: 1200px;
+  padding: 3%;
+  border-radius: 20px 20px;
+  margin: 5% auto;
+}
+.product_intro{
+  margin: 5% auto 0;
+  line-height: 3em;
+}
+
+.price{ 
+  color: red;
   font-weight: bold;
-  line-height: 1;
- }
-.comment-row{
-  background-color: black;
 }
-.member_register-userphoto{
-  padding: 2px;
-  border-radius: 50%;
+.image{
+  padding-bottom: 2em;
+  position: relative;
+  width: 35%;
+  max-height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.image img{
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  overflow: hidden;
   border: 1px solid black;
 }
-.comment-right{
-  text-align: left;
-  padding: 5%;
+.text{  /*商品*/
+  width: 60%;
+  padding: 5px;
 }
 
-.board-example{
-  width:250px;
-  margin:0px auto;
-  padding:0px;
+.inventory{ /*庫存*/
+  color:#22333B;
+  letter-spacing:2%;
+}
+.title{
+  padding-bottom: 1rem;
+}
+.button {
+  margin-top: 5%;
+}
+.number {
+  width: 40px;
+}
+.button-num {
+  margin: 10px;
+  width: 30px;
+  height:fit-content;
+}
+.introduction{
+  margin: left;
 }
 
-.comment-username{
-  text-align: center;
+@media(max-width:1200px) {
+  .image {
+      width: 32%;
+  }
+  .section{
+    margin: 80%;
+  }
 }
 
-.comment-userphoto{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media(max-width:768px) {
+  .image {
+      width: 60%;
+  }
+  section{
+    width: 20%;
+  }
+  input{
+    width: 50%;
+  }
 }
 
-.table-center{
-  position: relative;
-  display: flex;
-  justify-content: left;
-  align-items: left;
+@media(max-width:569px) {
+  .image {
+      width: 96%;
+  }
+  section{
+    width:  50%;
+  }
+ input{
+    width: 50%;
+  }
 }
 
+/* 使用者名稱 */
+.username{
+  margin: 0%;
+  padding: 1em;
+  font-size: 1.2em;
+}
+.userphoto{
+  padding: .5em;
+}
 .comment-timestamp{
-  font-size: 18px;
   color:gray;
-  text-align: center;
+}
+.comment_name {
+  padding: 0.7em;
 }
 
-hr {
-  text-align: center;
-}
 
-.comment-submit{
-  position: relative;
-  display: flex;
-  justify-content: right;
-  align-items: right;
-  padding-bottom: 10%;
-  /* background-color: #444; */
-}
 
-#comment-right-button{
-  margin-bottom: 20%;
-}
 
 /* 會動的星星 */
-
 .board {
     width:250px;
     margin:0px auto;
   }
-  
-  .star_value {
-    text-align:center;
+  .my-rating-6 {
+    display: flex;
+    justify-content: space-between;
   }
-  
-  /* hiding the radio buttons */
-  input[type="radio"] {
-    display:none;
-  }
-  
-  input[type="radio"]:checked ~ label {
-    color:orange;
-  }
-  
-  label {
-    color: grey;
-  }
-  
-  label:hover, label:hover ~ label {color:orange;}
-  
-  .rating {
-    direction:rtl;
-    unicode-bidi: bidi-override;
-  }
-
   .star{
-    text-align: center;
-  }
-  
-body{
-    background-color: #EAE0D5;
+    position: relative;
+    justify-content:left;
+    align-items: left;
+    /* margin: auto; */
+    width: 20%;
     display: inline-block;
-}
+    white-space: nowrap;
+    overflow: hidden;
+  }
   /* 不會動的星星 */
   .checked {
     color: orange;
   }
+/* Button外觀 */
+.buttonLOOK{
+  text-align: center;
+  border:0;
+  background-color:#22333B;
+  color:#fff;
+  border-radius:10px;
+  cursor:pointer;
+  width:150px;
+  height:50px;
+  margin: 1%;
+}
+
+input:hover {
+  color:#D79B00;
+  background-color:#fff;
+  border:2px #D79B00;
+}
+
+
+.comment-userphoto img {
+  overflow: hidden;
+  border: 5px solid #fafafa;
+  background-color: #fafafa;
+  box-shadow: 0 0 .5rem #babbbc;
+  transform: rotate(-360deg);
+  border-radius: 50%;
+}
